@@ -1,0 +1,133 @@
+.card{
+    width: 100%;
+    height: 490px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        transform: scale(1.05);
+        transition-duration:200ms;
+        > img {
+            margin-top: -20px;
+            transform: scale(1.15);
+            transition-duration: 300ms;
+            filter: drop-shadow(1px 3px 0px black);
+        }
+    }
+    .img_poke{
+        width: 160px;
+        margin: 0 auto;
+        z-index: 20;
+    }
+    .sub_card{
+        position: absolute;
+        border-radius: 10px;
+        min-height: 370px;
+        padding: 15px;
+        width: 100%;
+        margin-top: 100px;
+        padding-top: 15px;
+        border: 1px solid #424242;
+        box-shadow: #282828 0px 20px 30px -10px;
+    }
+
+    .id_card {
+        background-color: white;
+        border: 1px solid #484848;
+        width: auto;
+        padding: 1px 4px;
+        font-size: 0.85rem;
+        border-radius: 5px;
+        display: inline-block;
+    }
+
+    .name_card {
+        margin-top: 8px;
+        padding: 1px 4px;
+        font-size: 1.2rem;
+        display: block;
+        text-transform: capitalize;
+        font-weight: 900;
+    }
+
+    .altura_poke{
+        padding: 1px 4px;
+        margin-top: 2px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        display: block;
+        color: #282828;
+    }
+
+    .peso_poke, .habitat_poke {    
+        margin-top: 2px;
+        padding: 1px 4px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        display: block;
+        color: #282828;
+    }
+
+    .div_stats{
+        margin: 4px;
+        width: 100%;
+        padding: 5px;
+
+        .item_stats {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .name{
+                width: 90px;
+                text-transform: capitalize;
+                color: #484848;
+            }
+
+            .numero {
+                width: 22px;
+                color: #484848;
+                text-align: end;
+            }
+        }
+    }
+
+    .div_type_color{
+        display: flex;
+        justify-content: space-between;
+        margin: 6px 0;
+
+        .color_type {
+            border-radius: 4px;
+            border: 1px solid #424242;
+            text-align: center;
+            height: 20px;
+            line-height: 17px;
+            width: 50px;
+            color: white;
+
+        }
+    }
+
+    .div_evolucion {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .item_evo{
+            >img {
+                width: 80px;
+                &:hover {
+                    transform: scale(1.4);
+                    transition-duration: 200ms;
+                    z-index: 56;
+                }
+            }
+            >h6 {
+                text-align: center;
+            }
+        }
+    }
+}
+
